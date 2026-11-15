@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    color: white;
+}
+ 
+body{
+    background-color: #0a0a0f;
+   
+}
+
+
+body::before {
+    content: '';
+    position: fixed;
+    top: -200px; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(200,169,110,0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.All{
+    height: 100%;
+    width: 100%;
+}
+
+.name{
+
+    margin-left: 64vh;
+    margin-top: 5%;
+    
+}
+
+.name p{
+    text-transform: uppercase;
+    color: #c8a96e;
+    letter-spacing: 4px; /* wahi DM Sans hai */
+font-family: 'DM Sans', sans-serif;
+font-size: 10px;
+font-weight: 550;
+margin-left: 15%;
+
+}
+
+.name h1{
+    margin-left: 9%;
+    margin-top: 19px;
+   font-family: 'Playfair Display', serif;
+   font-weight: 900;
+   color: #f0ece0;
+   font-size: clamp(2.2rem, 6vw, 3.2rem); 
+}
+
+.name h1 span{
+    color: #c8a96e; /* var(--accent) - golden */
+font-style: italic;
+}
+
+.mid{
+    margin-left: 60vh;
+    margin-top: 4%;
+    background-color: #1a1a26; 
+    border: 1px solid #2a2a3a; 
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 520px;
+
+
+}
+
+.mid p{
+    text-transform: uppercase;
+    color: #7a7a8a; 
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.mid input{
+    background: #12121a;
+border: 1px solid #2a2a3a; 
+border-radius: 10px;      
+color: #f0ece0;             
+font-family: 'DM Sans', sans-serif;
+font-size: 1rem;          
+padding: 0.85rem 1rem;     
+width: 90%;               
+outline: none;              
+transition: border-color 0.3s; 
+cursor: pointer;
+margin-top: 20px;
+}
+
+.mid input::-webkit-calendar-picker-indicator{
+    filter: invert(0.7) sepia(1) saturate(2) hue-rotate(5deg);
+    cursor: pointer;
+}
+
+.mid input:focus{
+    border-color: #c8a96e; /* golden border aata hai */
+}
+
+.mid button{
+    width: 95%;
+    padding: 0.9rem; 
+    border-radius: 10px;
+    font-size: 1rem; 
+    font-weight: 550;
+    letter-spacing: 1px;
+    background-color: #c8a96e; 
+    color: #0a0a0f; 
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #e8c98e; /* thoda light golden */
+transform: translateY(-2px);
+transition: all 0.5s;
+}
+
+.bottom{
+    margin-left: 83vh;
+    margin-top: 40px;
+    color: #7a7a8a; 
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.result{
+    display: flex;
+    height: 150px;
+    width: 580px;
+    gap: 25px;
+    margin-left: 60vh;
+    margin-top: 20px;
+    
+
+
+}
+
+.result .box{
+    height: 95%;
+    width: 95%;
+    background-color: #1a1a26;
+    border-radius: 20px;
+    border-bottom: 5px solid #c8a96e;
+    /* border: 1px solid #2a2a3a;  */
+    
+  
+
+}
+
+.result .box div{
+    margin-top: 25%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.result .box  span{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    color: #c8a96e;
+}
+
+
+.result .box div p{
+    margin-top: 20%;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    color: #7a7a8a; 
+    line-height: 1;
+    
+} 
+
+.moreResult{
+    height: 120px;
+    width: 520px;
+    background-color: #1a1a26;
+     margin-left: 60vh;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.moreResult .Days{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2a2a3a;
+}
+
+.moreResult .Week{
+    display: flex;
+    justify-content: space-between;
+     padding-bottom: 8px;
+    border-bottom: 1px solid #2a2a3a;
+
+}
+
+.moreResult .Hour{
+    display: flex;
+    justify-content: space-between;
+     padding-bottom: 8px;
+    border-bottom: 1px solid #2a2a3a;
+}
+
+.moreResult .BirthDay{
+    display: flex;
+    justify-content: space-between;
+     padding-bottom: 8px;
+    border-bottom: 1px solid #2a2a3a;
+}
+
+.moreResult span{
+    color: #7a7a8a;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+
+} 
+
+.moreResult p{
+    color: #c8a96e;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+
+} 
+
+.hide{
+    visibility: hidden;
+}
